@@ -14,12 +14,17 @@ npm run serve
 ```
 npm run build
 ```
-**目涉及的技术主要有：** 
+**本项目涉及的技术主要有：** 
 
-ES6 、vue 、vuex 、vue-router 、vue-cli 、axios 、stylus 、element-ui 、mockjs 
+[es5+](http://es6.ruanyifeng.com/) 、[vue](https://cn.vuejs.org/index.html) 、[vuex](https://vuex.vuejs.org/zh-cn/) 、[vue-router](https://router.vuejs.org/zh-cn/) 、[vue-cli](https://github.com/vuejs/vue-cli)  、[axios](https://github.com/axios/axios) 、[stylus](https://stylus-lang.com/) 、[element-ui](https://element.eleme.cn/#/zh-CN) 、[Mock.js](https://github.com/nuysoft/Mock) 
 
 项目是个人学习Vuejs看了相关资料一个月多后完成的，有待完善。大都用原始的element-ui组件、页面单一、 没有过多复杂的配置项和过多的封装【相信新手看过其他成型的成品会有感受】
+
+Github:
 https://github.com/fucaiwei/vue-element-v1
+
+Gitee:
+https://gitee.com/fucaiwei/vue-element-v1
 ```
  src目录
 src
@@ -80,5 +85,7 @@ src
 └── App.vue
 
 ```
+ <img width="900" src="https://s1.cssscz.com/f2/31/de/67/f231de67fde03f1185b9521d8e587ac3size_974x662_size.png">
+ 
 ######交流群号:553870271
 ###### https://blog.cssscz.com 个人博客

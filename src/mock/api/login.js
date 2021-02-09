@@ -1,5 +1,5 @@
 const Mock = require('mockjs');
-Mock.setup( { timeout:  5000 } ) ;   //响应时间延迟 400 毫秒；
+Mock.setup( { timeout:  1000 } ) ;   //响应时间延迟 400 毫秒；
 
 let userInfo = {}
 var Random = Mock.Random

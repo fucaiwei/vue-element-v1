@@ -29,7 +29,6 @@ for (let i = 0; i < count; i++) {
         time: Random.date(),
         role: '@integer(1, 2)',
         status: '@integer(1, 2)',
-        browse: '@integer(300, 5000)',
         avatar,
     }))
 }
