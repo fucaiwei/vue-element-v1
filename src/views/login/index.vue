@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <el-form ref="loginForm"  class="login-form animate__animated animate__fadeInUp" autocomplete="on" label-position="left">
+    <el-form ref="loginForm"  class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container"><h3 class="title">登录</h3></div>
 
