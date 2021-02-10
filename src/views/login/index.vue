@@ -1,7 +1,7 @@
 <template>
   <div class="login-container">
-    <el-form ref="loginForm"  class="login-form" autocomplete="on" label-position="left">
 
+    <el-form ref="loginForm"  class="login-form" autocomplete="on" label-position="left">
       <div class="title-container"><h3 class="title">登录</h3></div>
 
       <el-tooltip v-model="nameTip" content="帐号：admin/user/test" placement="right">
@@ -86,7 +86,6 @@
                     background: 'rgba(0, 0, 0, 0.7)'
                 });
 
-                console.log(_this.loginForm,'request');
                 Mock.mock(userInfo.url,userInfo.response);
                 request.post(userInfo.url,_this.loginForm)
                     .then(function (data) {
@@ -94,12 +93,12 @@
                         common.setStorage('admin',data.data);
                         _this.jump()
                     })
-            },
-            mounted () {
-               let admin = common.getStorage('admin');
-               // if(admin) this.jump()
-                console.log(666)
             }
+        },
+        mounted () {
+            let admin = common.getStorage('admin');
+            if(admin) return this.jump()
+
         }
 
     }

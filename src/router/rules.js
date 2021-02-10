@@ -1,6 +1,10 @@
 
 let routers = [
     {
+        meta:{title:'后台登陆'},
+        component:'login/index',
+    },
+    {
         path: '/',
         component:'home',
 		redirect:{name:'index'},
@@ -21,11 +25,8 @@ let routers = [
                 component:'error'
             }
         ]
-    },
-    {
-        meta:{title:'后台登陆'},
-        component:'login/index',
     }
+
 
 ];
 
