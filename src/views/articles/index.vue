@@ -2,6 +2,7 @@
   <div class="article">
     <el-table
             ref="singleTable"
+            v-loading="loading"
             :data="tableData"
             :border="true"
             highlight-current-row
@@ -83,6 +84,7 @@
                 dialogVisible: false,
                 currentPage: 1,
                 currentDel: 1,
+                loading: true
             }
         },
         methods: {
@@ -100,9 +102,11 @@
             },
             handleCurrentChange(val) {
                 var _this = this;
+                _this.loading = true
                 request
                     .post(list.url,{page:val,limit:10})
                     .then(function (data) {
+                        _this.loading = false
                         _this.tableData = data.data;
                     })
             }
@@ -113,6 +117,7 @@
             Mock.mock(list.url,list.response);
             request.post(list.url)
             .then(function (data) {
+                _this.loading = false
                 _this.tableData = data.data;
             })
         }

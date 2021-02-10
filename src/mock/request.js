@@ -7,7 +7,7 @@ const isMock = true
 
 axios.interceptors.request.use(
     config => {
-        console.log('Request To be used');
+        //console.log('Request To be used');
         return config;
     },
     err => {
@@ -16,7 +16,6 @@ axios.interceptors.request.use(
 
 const request = {
     get: (url, params) => {
-        console.log(url,params);
         url = url || ''
         params = params || {}
         return new Promise((resolve, reject) => {
@@ -31,8 +30,6 @@ const request = {
         })
     },
     post: (url, params) => {
-
-        console.log(url,params);
         url = url || ''
         params = params || {}
         return new Promise((resolve, reject) => {
